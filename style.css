@@ -50,7 +50,6 @@ body {
   width: 100%;
   padding: 16px;
   background-color: var(--main-yellow);
-  border-bottom: 1px solid var(--main-black);
 }
 
 .main-nav ul {
@@ -87,7 +86,7 @@ body {
  .logo-wrapper {
     display: flex;
     align-items: center;
-    width: 50px; /* ou la largeur de votre choix */
+    width: 50px;
   }
 
 @media (max-width: 1024px) {
@@ -98,7 +97,6 @@ body {
   }
   
   @media (max-width: 525px) {
-  
     .main-nav {
       display: flex;
       order: 1;
@@ -129,6 +127,87 @@ body {
     .nav-toggler img {
       width: 20px;
     }
-
 }
+
+.hero {
+    min-height: 400px;
+    height: 500px;
+    padding-top: 200px;
+    background-image: url(ressources/student.jpg);
+    background-size: cover;
+    background-position: 30% 40%;
+    position: relative;
+    text-align: center;
+  }
+
+  .hero img {
+    object-fit: cover;
+  }
+
+.main-title {
+    font-family: var(--title-font);
+    font-size: var(--fs-50);
+    color: var(--main-white);
+    margin-top:30px;
+    margin-bottom: 30px;
+    font-weight: 900;
+  }
+
+ .main-subtitle{
+    font-family: var(--base-font);
+    font-size: var(--fs-30);
+    color: var(--shade-white);
+    font-weight: 500;
+  }
+
+  .push-down-hero {
+    display: none;
+  }
+
+  @media(max-width: 1024px){
+    .main-title {
+        font-size: var(--fs-36);
+    }
+
+    .main-subtitle {
+        font-size: var(--fs-24);
+    }
+
+    .push-down-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--shade-white);
+        border: 1px solid var(--main-white); 
+        position: absolute;
+        bottom: 30px;
+        left: 50%; /* le mettre au milieu */
+        transform: translateX(-50%) 
+    }
+
+    .push-down-hero img {
+        width: 20px;
+        pointer-events: none;
+        
+    }
+
+    @media (max-width: 525px) {
+        .hero {
+            padding-top: 125px;
+            min-height: 300px;
+        }
+
+        .main-title {
+            font-size: var(--fs-30);
+        }
+
+        .main-subtitle {
+            font-size: var(--fs-20);
+        }
+    }
+
+  }
 
