@@ -17,14 +17,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@300;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@700;900&family=Open+Sans:wght@300;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   </head>
   <body>
     <!-- Header -->
-    <header id="accueil">
+    <header id="accueil"> 
       <nav class="main-nav">
+        <a href="#" class="logo">
+          <img src="ressources/logo.png" alt="logo" class="logo_img">
+        </a>
         <button
           aria-controls="main-navlist"
           aria-expanded="false"
@@ -51,6 +55,85 @@
         </a>
       </div>
     </header>
+     <!-- a propros -->
+    <main>
+      <section class="about" id="valeurs">
+        <h2 class="section-title">
+          <span>Qui sommes Nous ?</span>
+        </h2>
+        <div class="container about-content">
+          <div class="about-text">
+            <h3 class="heading-h3">
+              <span>Nos Objectifs</span>
+            </h3>
+            <p>
+              La mission de notre académie de langue est de fournir à nos étudiants des cours de langue de haute qualité 
+              qui leur permettent d'acquérir des compétences linguistiques solides et de communiquer efficacement dans une langue étrangère. 
+              Nous visons à offrir une expérience d'apprentissage immersive et interactive qui permet à nos étudiants de développer leur confiance en eux et de progresser rapidement.
+            </p>
+            <h3 class="heading-h3">
+              <span>Nos cours</span>
+            </h3>
+            <p>
+              Nous proposons une gamme complète de cours de langue pour répondre aux besoins de tous nos étudiants, qu'ils soient débutants ou avancés. 
+              Nos cours sont adaptés à différents styles d'apprentissage et sont dispensés en petits groupes ou en cours particuliers pour une expérience d'apprentissage plus personnalisée. 
+              Les cours que nous offrons sont :  l'Espagnol, le Français et l'Anglais.
+            </p>
+          </div>
+          <div
+            class="about-slideshow"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="coupe de cheveux"
+          >
+            <div class="" role="group">
+              <img
+                src="ressources/espagne.png"
+                aria-roledescription="slide"
+                alt=""
+                class="active"
+              />
+              <img
+                src="ressources/france.png"
+                aria-roledescription="slide"
+                alt=""
+              />
+              <img
+                src="ressources/uk.png"
+                aria-roledescription=""
+                alt=""
+              />
+            </div>
+            <div
+              class="dots fade-slide-dots"
+              role="group"
+              aria-label="Boutons de controle"
+            >
+              <button
+                class="dot active"
+                data-fadeIndex="1"
+                aria-label="Montrer l'image 1"
+                aria-disabled="true"
+              ></button>
+              <button
+                class="dot"
+                data-fadeIndex="2"
+                aria-label="Montrer l'image 2"
+                aria-disabled="false"
+              ></button>
+              <button
+                class="dot"
+                data-fadeIndex="3"
+                aria-label="Montrer l'image 3"
+                aria-disabled="false"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
     <script src="script.js"></script>
 </body>
 </html>
